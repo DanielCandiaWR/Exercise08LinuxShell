@@ -10,7 +10,7 @@ read sideThree
 sumA="$(($sideOne+$sideTwo))"
 sumB="$(($sideTwo+$sideThree))"
 sumC="$(($sideThree+$sideOne))"
-if [ "$sumA" -le "$sideThree" ] || [ "$sumB" -le "$sideOne" ] || [ "$sumC" -le "$sideTwo" ]; then
+if [ "$sumA" -lt "$sideThree" ] || [ "$sumB" -lt "$sideOne" ] || [ "$sumC" -lt "$sideTwo" ]; then
     echo "It's not a Triangle"
 else
     if [ "$sideOne" -eq "$sideTwo" ] && [ "$sideTwo" -eq "$sideThree" ]; then
